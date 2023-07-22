@@ -1,4 +1,35 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+}
+.sky{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./background.jpg");
+    position: absolute;
+}
+.tree{
+    background-image: url("./trees.png");
+    height: 70vh;
+    width: 100vw;
+    position: absolute;
+    background-size: cover;
+
+
+}
+.track{
+    background-image: url("./track.png");
+    height: 40vh;
+    width: 100vw;
+    position: absolute;
+    top: 70%;
+}
+.car{
+    background-image: url("./car_body.png");
+    height: 100px;
+    width: 380px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 55%;
 }
