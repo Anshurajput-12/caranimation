@@ -10,19 +10,20 @@
 }
 .tree{
     background-image: url("./trees.png");
-    height: 70vh;
-    width: 100vw;
+    height: 72vh;
+    width: 101vw;
     position: absolute;
     background-size: cover;
-
-
+    top: 0%;
+    animation: trackmove linear .9s infinite;
 }
 .track{
     background-image: url("./track.png");
     height: 40vh;
-    width: 100vw;
+    width: 1000vw;
     position: absolute;
     top: 70%;
+    animation: trackmove linear .9s infinite;
 }
 .car{
     background-image: url("./car_body.png");
@@ -32,4 +33,37 @@
     background-repeat: no-repeat;
     background-size: cover;
     top: 55%;
+}
+.tyre1{
+    background-image: url("./wheel1.png");
+    height: 57px;
+    width: 58px;
+    top: 47%;
+    background-size: cover;
+    position: absolute;
+    margin-left: 63.5%;
+    rotate: 360deg;
+    animation: wheelroation linear .1s infinite;
+}
+.tyre2{
+    background-image: url("./wheel.png");
+    height: 57px;
+    width: 58px;
+    top: 47%;
+    background-size: cover;
+    position: absolute;
+    margin-left: 14%;
+    rotate: 360deg;
+    animation: wheelroation linear .1s infinite;
+}
+@keyframes wheelroation {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes trackmove {
+    100%{
+        transform: translatex(-500vw);
+    }    
 }
