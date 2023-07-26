@@ -23,7 +23,7 @@
     width: 1000vw;
     position: absolute;
     top: 70%;
-    animation: trackmove linear .9s infinite;
+    animation: treemove linear .9s infinite;
 }
 .car{
     background-image: url("./car_body.png");
@@ -66,4 +66,10 @@
     100%{
         transform: translatex(-500vw);
     }    
+}
+@keyframes treemove {
+    100%{
+        transform: translate(-200vw);
+    }
+    
 }
